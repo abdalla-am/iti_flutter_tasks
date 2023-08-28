@@ -4,9 +4,9 @@ void main() {
   String Y_OR_N;
   bool condition = true;
   int productNumber;
-  int Quantity1 = 0;
-  int Quantity2 = 0;
-  int Quantity3 = 0;
+  int Quantity1 = 0;   //Quantity of Tea packages
+  int Quantity2 = 0;   //Quantity of Sugar packages
+  int Quantity3 = 0;   //Quantity of Rice packages
   double total = 0;
 
   do {
