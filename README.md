@@ -6,7 +6,7 @@
   Dart & Flutter Problems and tasks
 </h1>
   <h3>
-    This repo provides the Dart & Flutter tasks & problems solutions for the ITI flutter 60 hours training (training Start date: 27-8-2023).
+    This repo provides the Dart & Flutter tasks & problems solutions for the ITI flutter 60 hours training (training Starting date: 27-8-2023).
   </h3>
  <h5>
     "Flutter" trainig at ITI 
