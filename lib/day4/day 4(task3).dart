@@ -93,7 +93,7 @@ void main() {
 
 
     else if (input == 5) {
-      print("1) search Found or not found \n2)search by key");
+      print("1) search a value Found or not found \n2)Get the key of a value if found");
       int input = int.parse(stdin.readLineSync()!);
       if (input == 1) {
         print('enter the value :');
@@ -105,23 +105,25 @@ void main() {
 
       }
       else if (input == 2) {
-        int value ;
-        print('enter the key :');
-        String key = stdin.readLineSync()!;
-        value=map1[key];
-        if(map1.containsKey(key))
-        {
-          print("thee map contains this key and its value is $value");
+        print('enter the value :');
+        int value = int.parse(stdin.readLineSync()!);
+
+        if(map1.containsValue(value)){
+          String keyOfSearched = map1.keys
+              .firstWhere((k) => map1[k] == value);
+          print("the key of value $value is ($keyOfSearched)");
         }
-        else
-        {
-          print("not found");
+        else{
+          print("The value does not exist in the map.");
         }
+
       }
       else {
         print("Wrong value entered");
       }
     }
+
+
     else if (input == 6) {
       print("Thank you for using out map editor");
     }
