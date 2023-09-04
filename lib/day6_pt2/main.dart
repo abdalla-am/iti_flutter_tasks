@@ -7,6 +7,7 @@ import 'Sheet.dart';
 import 'Teacher.dart';
 
 void main() {
+  // Course,Coursera,Lecture,Sheet and teacher classes are needed for this program
   int? input;
   Coursera c = Coursera();
   Teacher t = Teacher();
