@@ -158,7 +158,9 @@ class ChatApp extends StatelessWidget {
                          InkWell(
                            onTap:(){Navigator.of(context).push(MaterialPageRoute(builder: (c){
                              return Story1Details(story[i]);
-                           }));} ,
+                           },)
+                           );
+                             } ,
                            child:  Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Column(

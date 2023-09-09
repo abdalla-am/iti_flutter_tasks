@@ -1,7 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import'../pages/LoginPage.dart';
+import 'package:iti_flutter_tasks/day10_SportNewsUsingApi_/Screens/chooseCountry.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
                 (context) =>
-                LoginPage()
+                chooseCountry()
             )
         )
     );
@@ -27,9 +26,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blueGrey[600],
-        body:Center(child:Image.asset("assets/images/skype.png" ,width: 80,height: 80,))
-    );
+        backgroundColor: Colors.blueAccent,
+        body:Center(child:Image.asset("assets/images/sportsLogo.png" ,width: 300,height: 100,))
+    );;
   }
 }
 
